@@ -83,3 +83,47 @@
         </form>
     </div>
   </main>
+
+  <footer>
+    <div class="footerfirstpart">
+      <img class="footerlogo" src="./images/standex 3.png" alt="Standex Logo">
+      <p class="footerfirstparttext">
+        Standex Digital is a Digital Transformation firm specializing<br>
+        in cloud computing, digital marketing, E-commerce,<br>
+        Data science, AI, web, and mobile app development.<br>
+      </p>
+      <div class="footerfirstpartbuttons">
+        <a href="https://wa.link/6jtuc8" target="_blank"><img class="footerbuttons" src="./images/Whatsapp Logo.svg" alt="Whatsapp Icon"></a>
+        <a href="https://instagram.com/standexdigital" target="_blank"><img class="footerbuttons" src="./images/Instagram Logo.svg" alt="Instagram Icon"></a>
+        <a href="https://x.com/standexdigital" target="_blank"><img class="footerbuttons" src="./images/Twitter(x) Logo.svg" alt="Twitter Icon"></a>
+        <a href="https://www.linkedin.com/company/standex-digital/" target="_blank"><img class="footerbuttons" src="./images/Linked in logo.svg" alt="linkedin Icon"></a>
+      </div>
+    </div>
+
+    <div class="footersecondpart">
+      <p class="footersecondpartfirsttext">
+        Get In Touch
+      </p>
+      <p class="footersecondpartsecondtext">
+        Ready to talk?<br>
+        We’d love to hear<br>
+        from you. Email us<br>
+        <a class="footersecondpartemaillink" href="mailto:admin@standexdigital.tech" target="_blank">admin@standexdigital.tech</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const toggleBtn = document.querySelector('.togglebutton')
+    const toggleBtnIcon = document.querySelector('.togglebutton i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+
+      toggleBtnIcon.classList = isOpen
+      ? 'fa-solid fa-xmark'
+      : 'fa-solid fa-bars'
+    }
+  </script>
