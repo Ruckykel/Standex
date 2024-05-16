@@ -510,12 +510,16 @@ footer{
   display: none;
 }
 
+#fdropdown_menu{
+  top: 65px;
+}
+
 .dropdown_menu{
   display: none;
   position: absolute;
   height: 0;
   right: 20px;
-  top: 65px;
+  top: 115px;
   width: 300px;
   background-color: #4c756b;
   border-radius: 10px;
